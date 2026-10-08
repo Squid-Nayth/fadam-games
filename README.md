@@ -1,1 +1,1 @@
-<h1>HTML TP 08/10/2026 </h1>
+<h1>HTML/CSS/JavaScript TP 08/10/2026 </h1>
