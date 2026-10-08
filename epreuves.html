@@ -3,11 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Épreuves - FADAM Games</title>
 </head>
 <body>
 	<header>
 		<a href="index.html">FADAM Games</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="epreuves.html" aria-current="page">À propos</a></li>
+				<li><a href="inscription.html">Contact</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<main>
@@ -19,7 +27,20 @@
 		</div>
 
 		<p id="compteur"></p>
-		<section id="liste-epreuves"></section>
+		<section id="liste-epreuves">
+			<article class="carte">
+				<span class="badge">Athlétisme</span>
+				<h3>100 m</h3>
+				<p>3 juillet 2027 · Stade Charléty</p>
+				<p>Individuel · 64 places</p>
+			</article>
+			<article class="carte">
+				<span class="badge">Sports de combat</span>
+				<h3>Tournoi libre</h3>
+				<p>4 juillet 2027 · Paris</p>
+				<p>Individuel · 32 places</p>
+			</article>
+		</section>
 	</main>
 
 	<script defer src="js/epreuves.js"></script>
