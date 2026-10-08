@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inscription - FADAM Games</title>
+</head>
+<body>
+	<header>
+		<a href="index.html">FADAM Games</a>
+	</header>
+
+	<main>
+		<h1>Inscription aux FADAM Games</h1>
+
+		<form id="form-inscription">
+			<fieldset>
+				<legend>Identité</legend>
+
+				<p>
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" name="nom" required>
+				</p>
+				<p>
+					<label for="prenom">Prénom</label>
+					<input type="text" id="prenom" name="prenom" required>
+				</p>
+				<p>
+					<label for="email">E-mail</label>
+					<input type="email" id="email" name="email" required>
+				</p>
+				<p>
+					<label for="date-naissance">Date de naissance</label>
+					<input type="date" id="date-naissance" name="date-naissance" required>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Participation</legend>
+
+				<p>
+					<label for="choix-epreuve">Épreuve</label>
+					<select id="choix-epreuve" name="choix-epreuve" required>
+						<option value="">Choisir une épreuve</option>
+					</select>
+				</p>
+
+				<p>Je souhaite participer en tant que :</p>
+				<p>
+					<input type="radio" id="participant" name="role" value="participant" required>
+					<label for="participant">Participant</label>
+				</p>
+				<p>
+					<input type="radio" id="benevole" name="role" value="benevole">
+					<label for="benevole">Bénévole</label>
+				</p>
+
+				<p>
+					<input type="checkbox" id="reglement" name="reglement" required>
+					<label for="reglement">J'accepte le règlement</label>
+				</p>
+			</fieldset>
+
+			<button type="submit">S'inscrire</button>
+		</form>
+
+		<div id="recapitulatif"></div>
+	</main>
+
+	<script defer src="js/inscription.js"></script>
+</body>
+</html>
