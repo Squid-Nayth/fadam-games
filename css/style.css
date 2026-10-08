@@ -135,6 +135,13 @@ tbody tr:nth-child(even) {
 	margin-bottom: 1rem;
 }
 
+.filtres-disciplines {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 1rem;
+}
+
 #filtres label,
 form label {
 	display: block;
@@ -215,6 +222,16 @@ button {
 button:hover,
 button:focus-visible {
 	background: var(--corail);
+}
+
+button.actif,
+.favori .bouton-favori {
+	color: var(--clair);
+	background: var(--bleu-nuit);
+}
+
+.bouton-favori {
+	margin-top: 0.75rem;
 }
 
 .erreur {
